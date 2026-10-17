@@ -2,7 +2,7 @@ import React, { createContext, useContext, useEffect, useMemo, useState } from '
 import { SUBJECTS } from '../data/curriculum.js'
 
 // Progress lives in this browser only (localStorage). There is no backend and no account system.
-const KEY = 'classon-v2-progress'
+const KEY = 'classon-progress'
 const EMPTY = { kid: null, done: {}, days: [] }
 
 const Ctx = createContext(null)

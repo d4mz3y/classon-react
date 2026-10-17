@@ -1,9 +1,6 @@
-# Classon v2
+# Classon
 
 A playful early-learning app for young children: letters, numbers, songs, tracing and a parents' view.
-
-This is a **2026 rebuild in React** of the original Classon prototype, which was hand-written HTML and CSS in 2022
-([BrainClasson/Classon](https://github.com/BrainClasson/Classon)). It shares the idea and the name; the code is new.
 
 **Live demo:** https://d4mz3y.github.io/classon-react/
 
