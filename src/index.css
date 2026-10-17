@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Fredoka", system-ui, sans-serif;
+
+  --color-brand-50: #eef2ff;
+  --color-brand-100: #e0e7ff;
+  --color-brand-200: #c3cffc;
+  --color-brand-300: #9eaef7;
+  --color-brand-500: #4f63d2;
+  --color-brand-600: #3d4fb8;
+  --color-brand-700: #2f3d94;
+  --color-brand-900: #1c2557;
+
+  --color-sun: #ffc83d;
+  --color-leaf: #35b57c;
+  --color-berry: #ec5aa5;
+  --color-sky-top: #cfe0ff;
+  --color-sky-bottom: #f4f8ff;
+}
+
+html, body, #root { min-height: 100%; }
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-brand-900);
+  background: linear-gradient(180deg, var(--color-sky-top), var(--color-sky-bottom) 55%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+}
+
+@utility card {
+  background: white;
+  border-radius: 1.5rem;
+  box-shadow: 0 6px 0 rgb(61 79 184 / 12%), 0 12px 30px rgb(61 79 184 / 10%);
+}
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  background: var(--color-brand-600);
+  color: white;
+  box-shadow: 0 5px 0 var(--color-brand-900);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+
+  &:hover { background: var(--color-brand-500); }
+  &:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--color-brand-900); }
+  &:disabled { opacity: 0.45; pointer-events: none; }
+}
+
+@utility btn-soft {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  background: white;
+  color: var(--color-brand-600);
+  border: 2px solid var(--color-brand-200);
+  transition: border-color 120ms ease, background 120ms ease;
+
+  &:hover { border-color: var(--color-brand-500); background: var(--color-brand-50); }
+}
